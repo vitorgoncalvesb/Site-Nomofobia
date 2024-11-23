@@ -4,227 +4,6 @@
 
 .navbar-light .navbar-nav .nav-link:focus, 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #009688 !important;
-}
-
-.cycle_taital, .cycles_text {
-  color: #4DB6AC;
-}
-
-.row2 {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  margin-top: 100px;
-}
-
-.margin-above {
-  margin-top: 100px;
-}
-
-footer {
-  background: linear-gradient(90deg, rgba(33, 37, 41, 1) 0%, rgba(22, 26, 30, 1) 100%);
-  color: white;
-  padding: 30px;
-  align-items: center;
-  justify-content: center;
-}
-
-footer h5 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-footer ul {
-  padding-left: 0;
-  list-style-type: none;
-}
-
-footer ul li {
-  margin-bottom: 0.5rem;
-}
-
-body {
-  background-color: #fff;
-  font-family: 'Poppins';
-}
-
-.text-uppercase {
-  color: #fff;
-  padding-top: 10px;
-}
-
-#testes, #dicas, #recursos {
-  background-color: #f8f9fa;
-}
-
-#testes {
-  background-color: #f8f9fa;
-}
-
-form {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form .form-label {
-  font-weight: bold;
-}
-
-#resultado {
-  background-color: #e0f7fa;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#resultado h4 {
-  font-size: 1.5rem;
-  color: #00796b;
-}
-
-#resultadoTexto {
-  font-size: 1.2rem;
-}
-
-.footer_section, .layout_padding {
-  padding-top: 50px;
-}
-
-#dicas .card, #recursos .card {
-  border: none;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-#dicas .card:hover, #recursos .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-#dicas .card-title, #recursos .card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #00796b;
-}
-
-#dicas .card-text, #recursos .card-text {
-  font-size: 1rem;
-  color: #555;
-}
-
-#dicas .card-img-top, #recursos .card-img-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-#dicas h2, #recursos h2 {
-  font-size: 2rem;
-  color: #00796b;
-  font-weight: bold;
-}
-
-#recursos .btn-primary {
-  background-color: #00796b;
-  border-color: #00796b;
-}
-
-#recursos .btn-primary:hover {
-  background-color: #004d40;
-  border-color: #004d40;
-}
-
-#recursos p {
-  font-size: 1rem;
-  color: #555;
-}
-
-.news_taital {
-  font-family: 'Poppins';
-  color: #4db6ac;
-}
-
-.news_text {
-  color: #000000;
-  font-size: 1.25rem;
-  line-height: 2rem;
-}
-
-.speed_text {
-  color: #009688;
-  font-family: 'Poppins';
-  font-weight: bold;
-}
-
-.navbar-brand {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.margem-topo{
-  margin-top: 20%;
-}
-
-.margem-topo2 {
-  margin-top: 10%;
-}
-
-.margem-topo3 {
-  margin-top: 22%;
-}
-
-.margem-topo4 {
-  margin-top: 2%;
-}
-
-.long_text {
-  font-size: 0.75rem;
-  font-family: 'Poppins';
-}
-
-.post_text {
-  font-size: 0.7rem;
-  font-family: 'Poppins';
-}
-
-.preto {
-  color: #000000;
-  font-size: 0.8rem;
-}
-
-header {
-  background: linear-gradient(90deg, rgba(0, 123, 255, 1) 0%, rgba(0, 86, 179, 1) 100%);
-}
-
-h1, h2 {
-  font-family: 'Roboto', sans-serif;
-}
-
-.card-title {
-  font-weight: bold;
-  color: #0056b3;
-}
-
-.news_section {
-  background-color: #fff;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
-}
-
-.nav-link {
-  white-space: nowrap;
-}
-
-.navbar-light .navbar-nav .nav-link:focus, 
-.navbar-light .navbar-nav .nav-link:hover {
     color: #009688 !important;
 }
 
@@ -249,6 +28,40 @@ h1, h2 {
 footer {
   background: linear-gradient(90deg, rgba(33, 37, 41, 1) 0%, rgba(22, 26, 30, 1) 100%);
   color: white;
+}
+
+/* Redefinir o fundo padrão do resto do site */
+body {
+  background-color: #f8f9fa; /* Fundo claro padrão para o site */
+}
+
+/* Caso o footer esteja afetando outras partes inesperadamente */
+body > *:not(footer) {
+  background-color: inherit; /* Garante que o restante do site use o fundo padrão */
+}
+
+footer {
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+body {
+  background-color: #fff; /* Cor padrão para o restante do site */
 }
 
 .text-uppercase{
@@ -296,6 +109,7 @@ form .form-label {
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
+
 #dicas .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
