@@ -411,3 +411,29 @@ form .form-label {
   background-color: #004d40;
   border-color: #004d40;
 }
+/* Estilo para a seção do time */
+#time {
+  background-color: #f8f9fa;
+}
+
+#time img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #00796b;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+#time img:hover {
+  transform: scale(1.1);
+  border-color: #004d40;
+}
+
+#time h5 {
+  color: #00796b;
+  font-weight: bold;
+}
+
+#time p {
+  color: #6c757d;
+}
